@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --color-emerald-500: #10b981;
+  --color-slate-800: #1e293b;
+  --color-slate-100: #f1f5f9;
+  
+  --color-background: var(--bg);
+  --color-foreground: var(--text);
+  
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+}
+
+@layer base {
+  :root {
+    --bg: #f8fafc;
+    --text: #0f172a;
+    --primary: #10b981; /* Emerald 500 */
+    --primary-foreground: #ffffff;
+    --border: #e2e8f0;
+    --card: #ffffff;
+    --card-foreground: #0f172a;
+    --muted: #f1f5f9;
+    --muted-foreground: #64748b;
+  }
+  
+  .dark {
+    --bg: #0f172a; /* Slate 900 */
+    --text: #f8fafc;
+    --primary: #10b981;
+    --primary-foreground: #ffffff;
+    --border: #1e293b;
+    --card: #1e293b;
+    --card-foreground: #f8fafc;
+    --muted: #334155;
+    --muted-foreground: #94a3b8;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-[color:var(--border)];
+  }
+  body {
+    @apply bg-[color:var(--bg)] text-[color:var(--text)] font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 shadow-lg dark:bg-black/20 dark:border-white/10;
+  }
+  
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-lg border border-white/40 shadow-xl dark:bg-slate-800/60 dark:border-slate-700/50;
+  }
+}
