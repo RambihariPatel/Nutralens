@@ -15,8 +15,7 @@ This project demonstrates the integration of:
 🔄 Batch Processing – Handles multiple food inputs
 🧾 Log Monitoring – Tracks server and analysis logs
 ⚡ Automation Scripts – Includes scripts for processing and monitoring
-🛠️ Tech Stack
-Python 🐍 – Data processing & backend logic
+🛠️ Tech Stackython 🐍 – Data processing & backend logic
 JavaScript / TypeScript – AI interaction & scripts
 OpenAI API – Vision & intelligence layer
 Node.js – Runtime environment
