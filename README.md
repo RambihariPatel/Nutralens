@@ -78,7 +78,7 @@ Create a new branch
 Make your changes
 Submit a pull request
 📜 License
-
+...
 This project is open-source and available under the MIT License.
 
 👨‍💻 Author
